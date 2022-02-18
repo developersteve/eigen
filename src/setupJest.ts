@@ -180,9 +180,6 @@ console.error = (message?: any) => {
   }
 }
 
-mockedModule("./app/Components/OpaqueImageView/OpaqueImageView.tsx", "AROpaqueImageView")
-// mockedModule("./app/Components/ArtworkGrids/InfiniteScrollGrid.tsx", "ArtworksGrid")
-
 // Artist tests
 mockedModule("./app/Components/Artist/ArtistArtworks/ArtistArtworks.tsx", "ArtistArtworks")
 
