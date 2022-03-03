@@ -702,6 +702,7 @@ export const HomeQueryRenderer: React.FC = () => {
         renderPlaceholder: () => <HomePlaceholder />,
       }}
       cacheConfig={{ force: true }}
+      fetchPolicy="network-only"
       belowTheFoldTimeout={100}
     />
   )

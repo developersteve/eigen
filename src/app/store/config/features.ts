@@ -211,6 +211,11 @@ export const features = defineFeatures({
     description: "Show demand index hints",
     showInAdminMenu: true,
   },
+  AREnablePersistantCaching: {
+    readyForRelease: false,
+    description: "Enable new caching",
+    showInAdminMenu: false,
+  },
 })
 
 export interface DevToggleDescriptor {
