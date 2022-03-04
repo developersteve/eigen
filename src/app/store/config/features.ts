@@ -211,6 +211,11 @@ export const features = defineFeatures({
     description: "Show demand index hints",
     showInAdminMenu: true,
   },
+  AREnableNewOpaqueImageView: {
+    readyForRelease: false,
+    description: "Enable New Opaque Image View",
+    showInAdminMenu: true,
+  },
 })
 
 export interface DevToggleDescriptor {
