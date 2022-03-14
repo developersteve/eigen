@@ -38,7 +38,6 @@ export const createOrUpdateSubmission = async (
     utmMedium: values.utmMedium,
     utmSource: values.utmSource,
     utmTerm: values.utmTerm,
-    sourceArtworkId: values.sourceArtworkId,
   }
 
   if (submissionId) {
@@ -48,5 +47,8 @@ export const createOrUpdateSubmission = async (
     } as UpdateSubmissionMutationInput)
   }
 
-  return await createConsignSubmission(submissionValues as CreateSubmissionMutationInput)
+  return await createConsignSubmission({
+    sourceArtworkID: values.sourceArtworkId,
+    ...submissionValues,
+  } as CreateSubmissionMutationInput)
 }
