@@ -11,6 +11,7 @@ import { MyCollectionArtworkArtistMarket } from "./Components/ArtworkInsights/My
 import { MyCollectionArtworkComparableWorks } from "./Components/ArtworkInsights/MyCollectionArtworkComparableWorks"
 import { MyCollectionArtworkDemandIndex } from "./Components/ArtworkInsights/MyCollectionArtworkDemandIndex"
 import { RequestForPriceEstimate } from "./Components/ArtworkInsights/RequestForPriceEstimate"
+import { MyCollectionSubmit } from "./Components/MyCollectionSubmit"
 import { MyCollectionWhySell } from "./Components/MyCollectionWhySell"
 
 interface MyCollectionArtworkInsightsProps {
@@ -44,6 +45,8 @@ export const MyCollectionArtworkInsights: React.FC<MyCollectionArtworkInsightsPr
         <Text variant="lg">Price & Market Insights</Text>
 
         <Spacer mb={2} />
+
+        <MyCollectionSubmit artwork={artwork} />
 
         {!!marketPriceInsights && (
           <MyCollectionArtworkDemandIndex
@@ -96,6 +99,7 @@ const artworkFragment = graphql`
     ...MyCollectionArtworkComparableWorks_artwork
     ...MyCollectionArtworkArtistAuctionResults_artwork
     ...MyCollectionWhySell_artwork
+    ...MyCollectionSubmit_artwork
   }
 `
 

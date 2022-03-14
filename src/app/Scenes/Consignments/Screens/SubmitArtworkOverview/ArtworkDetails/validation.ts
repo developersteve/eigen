@@ -29,6 +29,7 @@ export interface ArtworkDetailsFormModel {
   utmSource: string | undefined
   utmTerm: string | undefined
   location: Location
+  sourceArtworkId: string | undefined
 }
 
 export const artworkDetailsEmptyInitialValues: ArtworkDetailsFormModel = {
@@ -54,6 +55,7 @@ export const artworkDetailsEmptyInitialValues: ArtworkDetailsFormModel = {
     state: "",
     country: "",
   },
+  sourceArtworkId: undefined,
 }
 
 export const artworkDetailsValidationSchema = Yup.object().shape({

@@ -38,6 +38,7 @@ export const createOrUpdateSubmission = async (
     utmMedium: values.utmMedium,
     utmSource: values.utmSource,
     utmTerm: values.utmTerm,
+    sourceArtworkId: values.sourceArtworkId,
   }
 
   if (submissionId) {
