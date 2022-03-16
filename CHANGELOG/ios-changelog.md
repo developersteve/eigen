@@ -1,13 +1,115 @@
 ## Undeployed Changes
 
-### v7.0.0
+### v7.3.1
 
 - Status: **Beta**
 - Changelog:
 
+  - User facing changes:
+
+    - Added a link to skip the `Select and Artwork` page below the search artworks textbox - sam
+    - updated SWA information on the artwork details page -daria
+    - Rename modal title - patrinoua
+    - visual Update of Demand Index section -daria
+    - feat: fraud messages improvement inside conversations - araujobarret
+    - Rename modal title - patrinoua
+    - small design improvements for the onboarding screens -daria
+    - The change will be (for the first time) visible to all users.
+    - Update artwork form skip button copy - ole
+    - fix events/ctas not rendered in conversation when not from inquiry - araujobarret
+    - Limit gallery appearances in Shows For You rail - ole
+    - Rename modal title - patrinoua
+    - Button should stay behind the keyboard on MyCollection Add/Edit artwork form - Sam
+    - Sticky button at the bottom of My collection add/edit artwork form page - sam
+    - Rename modal title - patrinoua
+    - Rename modal title - patrinoua
+    - Add trending icon to My Collection artwork detail screen - ole
+    - Rename modal title - patrinoua
+    - Rename modal title - patrinoua
+    - Add My Collection artwork comparable works section - ole
+    - Rename modal title - patrinoua
+    - refactor CommercialButtons - araujobarret
+    - Enable support for filtering new color names - roop
+    - Rename modal title - patrinoua
+    - Rename modal title - patrinoua
+    - Fix consignments upload nav - brian
+    - fix issue with back navigation on swa flow
+    - Removed additional paddings for each flow step
+    - Added scroll view for the last step
+    - Updated collapsing animation
+    - Rename modal title - patrinoua
+    - Auto focus on OTP input - mounir
+    - Rename modal title - patrinoua
+    - Rename modal title - patrinoua
+    - ability to update price filter using text input & slider - gkartalis
+    - adding Unleash for experiments and flags - pavlos
+    - added refresh to my collection when submitting artworks with SWA -daria
+    - Added request for price estimate CTA - kizito
+    - Scale all icons based on font scale - ole
+    - ID verification process on Collector profile - sam
+    - Change copy of fields and placeholder on Collector Profile - Sam
+    - Add new my collection artwork details page about tab - mrsltun
+    - Rename modal title - patrinoua
+    - change copies Buy Now, Make Offer and Contact For Price - araujobarret
+    - Add Show Only Submitted Artworks Local Filter - kizito
+    - Fix line break issues on the collector profile - mounir
+    - Rename modal title - patrinoua
+    - Fix keyboard issues on my profile edit screen - mounir
+    - Keep profile form save button enabled whenever the user edits an input - ole
+    - Rename modal title - patrinoua
+    - Adjust collector profile icon alignment and size - ole
+    - Update copy on link accounts flow - kizito
+    - Implement My Collection artwork insights tab (behind feature flag) - ole
+    - Improve artwork form metric change performance - ole
+    - Rename modal title - patrinoua
+    - Rename modal title - patrinoua
+    - Restore listing of articles not in the editorial feed to fair screen - dimatretyak
+    - city guide city selector stays visible - pavlos
+    - Fixes city not updating in city guide - Pavlos, Brian, Angela, Sultan
+    - set the right url scheme on google login - mounir
+
   - Dev changes:
-    - Do not save the changelog update date - mounir
-    - Track link tap and AuctionResultsForYou Screen - kizito
+    - removed redundant failing test -daria
+    - Removes old NewFirstInquiry feature flag - Mitchell
+    - Fix for account linking behaviour bug - kizito
+    - Remove old auction code and flag - pavlos
+    - small layout improvement -daria
+    - Added source field on submission create
+    - Remove AROptionsNewSalePage feature flag - Sam
+    - Changes applicable to devs only.
+    - Remove native webview feature flag - brian
+    - Update currency and length unit - sam
+    - Update app description and title - brian
+    - Changes applicable to devs only.
+    - clean up feature flag AREnableImprovedAlertsFlow - dimatretyak
+    - Changes applicable to devs only as the feature behind a flag.
+    - Fix release status check job - brian
+    - Changes applicable to devs only.
+    - Changes are applicable only to devs at this stage.
+    - Add analytics tracking for the submission flow
+    - Rename best practices to preferred practices - patrinoua
+    - set the collector profile and linking social accounts flags to be ready for release - mounir
+    - Remove AREnableWebPImages feature flag - ole
+    - Remove AREnableCustomSharesheet feature flag - ole
+    - add an fps counter dev toggle - pavlos
+    - refactor some thinks inside the auth model - mounir
+    - add ARShowDemandIndexHints and ARShowwRequestPriceEstimateBanner feature flags - mounir
+    - remove enable trove ff - mounir
+    - remove shows for you rail ff - mounir
+    - The changes apply to the devs only, since this whole feature is behind a feature flag for now.
+    - This feature is behind a feature flag, so the changes applicable only to developer for now.
+    - The change is applicable only to devs since the feature is behind a flag.
+    - Add root Suspense component - ole
+    - add release ios app script - mounir, nikita
+    - add cron-job to check if the app has been approved at the store - mounir
+    - metaflags! - pavlos
+    - dark mode flag - pavlos
+    - small sentry cleanup - pavlos
+    - Hide stable released feature flags from admin menu - mounir
+    - remove duplicate relay environment mocks from tests - gkartalis
+    - deps updates - pavlos
+    - remove AREnableSortFilterForArtworksPill feature flag - gkartalis
+    - Add generated Relay files to gitignore - ole
 
 <!-- DO NOT CHANGE -->
 
