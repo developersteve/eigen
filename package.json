@@ -130,7 +130,7 @@
     "algoliasearch": "4.10.3",
     "autosuggest-highlight": "3.1.1",
     "core-js": "3.21.1",
-    "easy-peasy": "3.3.0",
+    "easy-peasy": "5.0.4",
     "events": "3.3.0",
     "formik": "2.2.9",
     "google-libphonenumber": "3.2.27",
