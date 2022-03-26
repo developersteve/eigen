@@ -40,7 +40,7 @@
     "open-sim": "open -a Simulator",
     "open-url": "npx uri-scheme open",
     "postinstall": "prettier --write package.json; ./scripts/update-echo",
-    "prepare": "patch-package && husky install",
+    "prepare": "yarn run snyk-protect && patch-package && husky install",
     "prettier-project": "yarn run prettier-write 'src/**/*.{ts,tsx}'",
     "prettier-write": "prettier --write",
     "relay": "relay-compiler",
@@ -75,7 +75,8 @@
     "secrets:add-from:staged": "scripts/secrets-add-staged",
     "secrets:add-from:all": "scripts/secrets-add-all",
     "secrets:generate!": "scripts/secrets-generate-baseline",
-    "update-metaphysics": "node scripts/update-metaphysics.js"
+    "update-metaphysics": "node scripts/update-metaphysics.js",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -192,7 +193,8 @@
     "unleash-proxy-client": "1.11.0",
     "url": "0.11.0",
     "yup": "0.29.1",
-    "zustand": "3.6.9"
+    "zustand": "3.6.9",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@artsy/update-repo": "0.5.0",
@@ -334,5 +336,6 @@
   },
   "pull-lock": {
     "yarn.lock": "yarn install"
-  }
+  },
+  "snyk": true
 }
